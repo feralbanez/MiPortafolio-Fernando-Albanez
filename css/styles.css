@@ -1,0 +1,431 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 40%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    --main-color: #000000;
+    --primry-color: #000000;
+    --button-background: #ff8800;
+    --primary-button-background: #e6a148;
+    --background-color: #e6a148;
+  }
+  
+  h4,
+  h3 {
+    font-family: "barralow";
+    color: var(--main-color);
+  }
+  
+  h3 {
+    font-weight: 750;
+    font-size: 3.5rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+  }
+  
+  p,
+  a,
+  li,
+  button {
+    font-family: "barralow";
+    color: var(--primry-color);
+  }
+  
+  p {
+    font-size: 3.5rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  /* MENU */
+  header {
+    padding: 0 20rem;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+  }
+  
+  header nav .menu-izquierdo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    /* background-color: #e2efff; */
+  }
+  
+  header nav .menu-izquierdo a img {
+    width: 100rem;
+    height: 5.5rem;
+  }
+  
+  header nav .menu-izquierdo .menu-secundario {
+    height: inherit;
+    display: flex;
+    position: relative;
+    z-index: 80;
+  }
+  
+  header nav .menu-izquierdo .menu-secundario a {
+    margin-right: 4rem;
+  }
+  
+  header nav .menu-izquierdo .menu-secundario a li {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    transition: all 0.2s;
+  }
+  
+  header nav .menu-izquierdo .menu-secundario a li:hover {
+    color: var(--button-background);
+  }
+
+  /* -------------------------------------- our principal css style 
+  --------------------------------------------------------------------------- */
+  .menu-principal {
+    padding: 0 25rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .menu-principal .principal-lado-izquierdo {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .menu-principal h1 {
+    width: 50rem;
+    font-size: 7.5rem;
+    line-height: 9rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+  }
+  
+  .menu-principal p {
+    margin-bottom: 8rem;
+    width: 50rem;
+  }
+  
+  .menu-principal a img {
+    width: 20.5rem;
+    height: 4rem;
+  }
+  
+  /* ------------------- our principal right side css style 
+  ------------------------------------ */
+  .menu-principal .principal-right-side {
+    width: 50%;
+    height: 85vh;
+    background: var(--background-color);
+    position: absolute;
+    right: 0;
+    top: 12;
+    border-radius: 80px 80px 0px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-principal .principal-right-side img {
+    width: 100rem;
+    height: 90rem;
+    margin-right: 1rem;
+  }
+  
+  /* ------------------- our 2nd section left side css style 
+  ------------------------------------ */
+  
+  .comun-section {
+    width: 100%;
+    height: 90rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+    padding: 0 20rem;
+  }
+  
+  .comun-section .lado-izquierdo {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .comun-section .lado-izquierdo figure {
+    width: 150rem;
+    height: 90rem;
+    background: #e6a148;
+    border-radius: 50px;
+    margin-left: -50rem;
+    margin-top: 5rem;
+  }
+  
+  .comun-section .lado-izquierdo img {
+    width: 70rem;
+    height: 70rem;
+    border-radius: 2rem;
+    margin-left: 10rem;
+    margin-top: 15rem;
+  }
+  
+  /* ------------------- our 2nd section right side css style 
+  ------------------------------------ */
+  
+  .comun-section .right-side {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .comun-section .right-text {
+    width: 90%;
+    height: 100%;
+    margin-top: -65rem;
+
+  }
+
+  .comun-section .right-side h2 {
+    width: 40rem;
+    margin-left: 20rem;
+    font-style: normal;
+    font-size: 6.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+  
+  .comun-section .right-side p {
+    font-size: 3rem;
+    width: 51rem;
+    margin-bottom: 1rem;
+    height: 30rem;
+    margin-left: 20rem;
+    margin-bottom: 15rem;
+  }
+
+  /* ------------------- our 3rd section  css style 
+  ------------------------------------ */
+  
+  .seccion-tres {
+    width: 100%;
+    height: 90rem;
+    background: var(--background-color);
+    padding: 9rem 15rem;
+  }
+  
+  .seccion-tres h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .seccion-tres p {
+    font-size: 2.5rem;
+    width: 60rem;
+    height: 15rem;
+    margin-bottom: 2.5;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .seccion-tres .seccion-tres-task {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10rem;
+  }
+  
+  .seccion-tres .seccion-tres-task .task-1,
+  .seccion-tres .seccion-tres-task .task-2,
+  .seccion-tres .seccion-tres-task .task-3 {
+    padding-top: 5rem;
+    /* background: cornsilk; */
+    text-align: center;
+    transition: all 0.5s linear;
+    border-radius: 0rem;
+  }
+  
+  .seccion-tres .seccion-tres-task .task-1 h3,
+  .seccion-tres .seccion-tres-task .task-2 h3,
+  .seccion-tres .seccion-tres-task .task-3 h3 {
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    margin-top: 2.8rem;
+  }
+  
+  .seccion-tres .seccion-tres-task .task-1 img,
+  .seccion-tres .seccion-tres-task .task-2 img,
+  .seccion-tres .seccion-tres-task .task-3 img {
+    width: 6rem;
+    height: 6rem;
+    transition: all 0.3s;
+  }
+  
+  .seccion-tres .seccion-tres-task .task-1 img,
+  .seccion-tres .seccion-tres-task .task-2 img {
+    height: 6rem;
+    width: 6rem;
+  }
+  
+  
+  .seccion-tres .seccion-tres-task .task-1:hover,
+  .seccion-tres .seccion-tres-task .task-2:hover, 
+  .seccion-tres .seccion-tres-task .task-3:hover{
+  
+    background: rgb(243, 180, 98);
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+  }
+  
+  
+  /* ------------------- our 4th section  css style 
+  ------------------------------------ */
+  
+  #section-four .right-side h2 {
+    width: 60rem;
+    padding-bottom: 8rem;
+  }
+  
+  #section-four .lado-izquierdo img {
+    width: inherit;
+    height: absolute;
+    margin: 5;
+  }
+  
+  /* ------------------- our 5th section  css style 
+  ------------------------------------ */
+  
+  #seccion-cuatro .lado-izquierdo img {
+    margin: 0;
+    width: 80rem;
+    height: 80rem;
+
+  }
+  
+  #seccion-cuatro .right-side {
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 15rem;
+  }
+  
+  #seccion-cuatro .right-side h2 {
+    width: 55rem;
+    font-weight: 900;
+    font-size: 6.5rem;
+    line-height: 9rem;
+  }
+  
+  #seccion-cuatro .right-side h3 {
+    text-transform: none;
+  }
+  
+  #seccion-cuatro .right-side p {
+    height: 3rem;
+  }
+  
+  #seccion-cuatro .right-side div {
+    margin-bottom: 5rem;
+  }
+
+  
+  /* ------------------- our 6th section menu css style 
+  ------------------------------------ */
+  
+  menu {
+    width: 100%;
+    background: var(--background-color);
+    height: auto;
+    padding: 5rem 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  menu img {
+    width: 13rem;
+    height: 5.5rem;
+  }
+  
+  menu .menu-menu {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  menu div h4 {
+    font-size: 3.8rem;
+    text-transform: capitalize;
+  }
+  
+  menu div a {
+    font-size: 1.7rem;
+    line-height: 150%;
+  }
+  
+  menu .menu-div-5 a {
+    font-size: 1.5rem;
+  }
+  
+  /* ------------------- our 7th section social media css style 
+  ------------------------------------ */
+  
+  .icon-barra {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-90%);
+    z-index: 5;
+  }
+  
+  .icon-barra a {
+    width: 20rem;
+    background: #da6725;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.7rem;
+    padding: 1.5rem;
+    transition: all 0.5s linear;
+    transform: translateX(-15.5rem);
+  }
+  
+  .icon-barra a:hover {
+    transform: translateX(0);
+
+  }
+  .icon-barra .instagram {
+    background: #f09866;
+  }
+  .icon-barra .youtube {
+    background: #f09866;
+  }
